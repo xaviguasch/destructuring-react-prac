@@ -1,12 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+// CHALLENGE: uncomment the code below and see the car stats rendered
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import cars from './practice.js'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+    <div>
+        <h1>prova</h1>
+        {/* <table>
+            <tr>
+                <th>Brand</th>
+                <th>Top Speed</th>
+            </tr>
+            <tr>
+                <td>{tesla.model}</td>
+                <td>{teslaTopSpeed}</td>
+                <td>{teslaTopColour}</td>
+            </tr>
+            <tr>
+                <td>{honda.model}</td>
+                <td>{hondaTopSpeed}</td>
+                <td>{hondaTopColour}</td>
+            </tr>
+        </table> */}
+    </div>,
+    document.getElementById('root')
+)
